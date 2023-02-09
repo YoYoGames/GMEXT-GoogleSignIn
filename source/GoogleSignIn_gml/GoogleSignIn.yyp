@@ -1,0 +1,55 @@
+{
+  "resourceType": "GMProject",
+  "resourceVersion": "1.6",
+  "name": "GoogleSignIn",
+  "AudioGroups": [
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+  ],
+  "configs": {
+    "children": [],
+    "name": "Default",
+  },
+  "defaultScriptType": 1,
+  "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GoogleSignIn","folderPath":"folders/GoogleSignIn.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/GoogleSignIn Demo/Objects.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/GoogleSignIn Demo/Rooms.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"YoYo Extensions Assets","folderPath":"folders/YoYo Extensions Assets.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Font","folderPath":"folders/YoYo Extensions Assets/Font.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/YoYo Extensions Assets/Objects.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/YoYo Extensions Assets/Sprites.yy","order":3,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GoogleSignIn Demo","folderPath":"folders/GoogleSignIn Demo.yy","order":0,},
+  ],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"index.html","CopyToMask":32,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Google Sign In Extension.pdf","CopyToMask":0,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Google Sign In Extension.docx","CopyToMask":0,"filePath":"datafiles",},
+  ],
+  "isEcma": false,
+  "MetaData": {
+    "IDEVersion": "2023.1.0.58",
+  },
+  "resources": [
+    {"id":{"name":"Spr_YoYo_button","path":"sprites/Spr_YoYo_button/Spr_YoYo_button.yy",},"order":2,},
+    {"id":{"name":"Font_YoYo_50","path":"fonts/Font_YoYo_50/Font_YoYo_50.yy",},"order":2,},
+    {"id":{"name":"Obj_GoogleSignIn_SignIn","path":"objects/Obj_GoogleSignIn_SignIn/Obj_GoogleSignIn_SignIn.yy",},"order":0,},
+    {"id":{"name":"GoogleSignIn","path":"extensions/GoogleSignIn/GoogleSignIn.yy",},"order":0,},
+    {"id":{"name":"Room_YoYo","path":"rooms/Room_YoYo/Room_YoYo.yy",},"order":4,},
+    {"id":{"name":"Font_YoYo_20","path":"fonts/Font_YoYo_20/Font_YoYo_20.yy",},"order":0,},
+    {"id":{"name":"Font_YoYo_30","path":"fonts/Font_YoYo_30/Font_YoYo_30.yy",},"order":1,},
+    {"id":{"name":"Obj_YoYo_textbox","path":"objects/Obj_YoYo_textbox/Obj_YoYo_textbox.yy",},"order":2,},
+    {"id":{"name":"Spr_YoYo_Background","path":"sprites/Spr_YoYo_Background/Spr_YoYo_Background.yy",},"order":0,},
+    {"id":{"name":"Obj_YoYo_text","path":"objects/Obj_YoYo_text/Obj_YoYo_text.yy",},"order":1,},
+    {"id":{"name":"Obj_GoogleSignIn_SignOut","path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},"order":1,},
+    {"id":{"name":"Obj_YoYo_button","path":"objects/Obj_YoYo_button/Obj_YoYo_button.yy",},"order":0,},
+    {"id":{"name":"Spr_YoYo_textbox","path":"sprites/Spr_YoYo_textbox/Spr_YoYo_textbox.yy",},"order":3,},
+    {"id":{"name":"Room_GoogleSignIn","path":"rooms/Room_GoogleSignIn/Room_GoogleSignIn.yy",},"order":0,},
+  ],
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room_GoogleSignIn","path":"rooms/Room_GoogleSignIn/Room_GoogleSignIn.yy",},},
+    {"roomId":{"name":"Room_YoYo","path":"rooms/Room_YoYo/Room_YoYo.yy",},},
+  ],
+  "TextureGroups": [
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
+  ],
+}

@@ -1,0 +1,2 @@
+
+GoogleSignIn_SignOut()
