@@ -39,6 +39,8 @@
   "gradleinject": "\r\n\r\nimplementation 'com.google.android.gms:play-services-auth:19.2.0'\r\n\r\n",
   "hasConvertedCodeInjection": true,
   "helpfile": "",
+  "HTML5CodeInjection": "",
+  "html5Props": false,
   "IncludedResources": [],
   "installdir": "",
   "iosCocoaPodDependencies": "",
@@ -53,7 +55,11 @@
   "maccompilerflags": "",
   "maclinkerflags": "",
   "macsourcedir": "",
-  "options": [],
+  "options": [
+    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"html5ClientID","defaultValue":"0","description":"Can be accessed in-game by the name 'html5ClientID'","displayName":"HTML5 Client ID","exportToINI":false,"extensionId":null,"guid":"a9082ed0-4d32-4f1d-9d8e-3e8dccfe075a","hidden":false,"listItems":[],"optType":2,},
+    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"androidClientID","defaultValue":"0","description":"Can be accessed in-game by the name 'androidClientID'","displayName":"Android Client ID","exportToINI":false,"extensionId":null,"guid":"dbf63b47-98bd-4520-95ca-f70576af7321","hidden":false,"listItems":[],"optType":2,},
+    {"resourceType":"GMExtensionOption","resourceVersion":"1.0","name":"iosClientID","defaultValue":"0","description":"Can be accessed in-game by the name 'iosClientID'","displayName":"iOS Client ID","exportToINI":false,"extensionId":null,"guid":"c25a7650-d2fb-4e2b-8495-e56fbe1d36b4","hidden":false,"listItems":[],"optType":2,},
+  ],
   "optionsFile": "options.json",
   "packageId": "",
   "parent": {

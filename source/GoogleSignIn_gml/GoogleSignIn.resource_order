@@ -1,11 +1,11 @@
 {
   "FolderOrderSettings": [
+    {"name":"GoogleSignIn Demo","order":2,"path":"folders/GoogleSignIn Demo.yy",},
     {"name":"Rooms","order":1,"path":"folders/GoogleSignIn Demo/Rooms.yy",},
     {"name":"YoYo Extensions Assets","order":1,"path":"folders/YoYo Extensions Assets.yy",},
     {"name":"Font","order":1,"path":"folders/YoYo Extensions Assets/Font.yy",},
     {"name":"Objects","order":2,"path":"folders/YoYo Extensions Assets/Objects.yy",},
     {"name":"Sprites","order":3,"path":"folders/YoYo Extensions Assets/Sprites.yy",},
-    {"name":"GoogleSignIn Demo","order":2,"path":"folders/GoogleSignIn Demo.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Spr_YoYo_button","order":2,"path":"sprites/Spr_YoYo_button/Spr_YoYo_button.yy",},
