@@ -24,11 +24,13 @@ extern "C" int dsListGetSize(int _dsList);
 
 extern "C" void createSocialAsyncEventWithDSMap(int dsmapindex);
 
+extern "C" const char* extOptGetString(char* _ext, char* _opt);
+
 @implementation YYGoogleSignIn
 
--(void) GoogleSignIn_Show:(NSString*) clientID
+-(void) GoogleSignIn_Show
 {
-    GIDConfiguration *signInConfig = [[GIDConfiguration alloc] initWithClientID:clientID];
+    GIDConfiguration *signInConfig = [[GIDConfiguration alloc] initWithClientID:[[NSString alloc] initWithCString:(char*) extOptGetString((char*)"GoogleSignIn", (char*)"iosClientID") encoding:NSUTF8StringEncoding]];
     
     [GIDSignIn.sharedInstance signInWithConfiguration:signInConfig presentingViewController:g_controller callback:^(GIDGoogleUser * _Nullable user,NSError * _Nullable error) 
 	{

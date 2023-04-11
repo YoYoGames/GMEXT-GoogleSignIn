@@ -39,7 +39,7 @@ public class YYGoogleSignIn extends RunnerSocial
 	
 	private SignInClient oneTapClient;
 	
-	public void GoogleSignIn_Show(String token)
+	public void GoogleSignIn_Show()
 	{
 		oneTapClient = Identity.getSignInClient(activity);
 		
@@ -47,7 +47,7 @@ public class YYGoogleSignIn extends RunnerSocial
 					//.setPasswordRequestOptions(PasswordRequestOptions.builder().setSupported(true).build())
 					.setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
 						.setSupported(true)
-						.setServerClientId(token)
+						.setServerClientId(RunnerJNILib.extOptGetString("GoogleSignIn", "androidClientID"))
 						.setFilterByAuthorizedAccounts(true)
 						.build()
 					)
