@@ -13,10 +13,10 @@
   "author": "",
   "classname": "YYGoogleSignIn",
   "copyToTargets": 9007199254741036,
-  "date": "2021-08-23T07:59:21.4039452-07:00",
+  "date": "2021-08-23T15:59:21.4039452+01:00",
   "description": "",
   "exportToGame": true,
-  "extensionVersion": "1.1.0",
+  "extensionVersion": "1.2.0",
   "files": [
     {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":-1,"filename":"GoogleSignIn.ext","final":"","functions":[
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"GoogleSignIn_Show","argCount":0,"args":[],"documentation":"","externalName":"GoogleSignIn_Show","help":"GoogleSignIn_Show()","hidden":false,"kind":4,"returnType":1,},
@@ -35,8 +35,8 @@
   "gradleinject": "\r\n\r\nimplementation 'com.google.android.gms:play-services-auth:19.2.0'\r\n\r\n",
   "hasConvertedCodeInjection": true,
   "helpfile": "",
-  "HTML5CodeInjection": "",
-  "html5Props": false,
+  "HTML5CodeInjection": "\r\n<GM_HTML5_PreBody>\r\n    <script src=\"https://accounts.google.com/gsi/client\" async defer></script>\r\n</GM_HTML5_PreBody>",
+  "html5Props": true,
   "IncludedResources": [],
   "installdir": "",
   "iosCocoaPodDependencies": "",
