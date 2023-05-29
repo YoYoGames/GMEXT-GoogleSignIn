@@ -1,0 +1,14 @@
+[
+    {
+        "projectFile": "source/GoogleSignIn_gml/GoogleSignIn.yyp",
+        "extensionFile": "source/GoogleSignIn_gml/extensions/GoogleSignIn/GoogleSignIn.yy",
+        "packageId": "com.yoyogames.googlesigninext",
+        "packageName": "Google SignIn Ext",
+        "packageVersion": "1.2.0",
+        "includeFolders": null,
+        "includeResources": null,
+        "excludeFolders": null,
+        "excludeResources": null,
+        "format": "LTS22"
+    }
+]
