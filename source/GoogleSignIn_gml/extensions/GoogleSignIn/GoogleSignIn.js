@@ -1,8 +1,7 @@
-
-function GoogleSignIn_Show(clientID)
+function GoogleSignIn_Show()
 {
     google.accounts.id.initialize({
-      client_id: clientID,
+      client_id: GMS_API.extension_get_option_value("GoogleSignIn","html5ClientID"),
       callback: handleCredentialResponse
     });
 	
