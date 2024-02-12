@@ -1,14 +1,18 @@
-[
-    {
-        "projectFile": "source/GoogleSignIn_gml/GoogleSignIn.yyp",
-        "extensionFile": "source/GoogleSignIn_gml/extensions/GoogleSignIn/GoogleSignIn.yy",
-        "packageId": "com.yoyogames.googlesigninext",
-        "packageName": "Google SignIn Ext",
-        "packageVersion": "1.2.0",
-        "includeFolders": null,
-        "includeResources": null,
-        "excludeFolders": null,
-        "excludeResources": null,
-        "format": "LTS22"
-    }
-]
+{
+    "gitHubUrl": "https://github.com/YoYoGames/GMEXT-GoogleSignIn",
+    "projectFile": "source/GoogleSignIn_gml/GoogleSignIn.yyp",
+    "projectVersion": "LTS22",
+    "releaseTemplate": "templates/release_body.md",
+    "extensionMetaData": [
+        {
+            "extensionFile": "source/GoogleSignIn_gml/extensions/GoogleSignIn/GoogleSignIn.yy",
+            "packageId": "com.yoyogames.googlesigninext",
+            "packageName": "Google SignIn Ext",
+            "packageVersion": "1.2.0",
+            "packageFormat": "LTS22",
+            "includeFolders": null,
+            "includeResources": null,
+            "excludeResources": null
+        }
+    ]
+}
