@@ -14,7 +14,7 @@
   "copyToTargets":9007199254741036,
   "description":"",
   "exportToGame":true,
-  "extensionVersion":"1.2.0",
+  "extensionVersion":"2.0.0",
   "files":[
     {"$GMExtensionFile":"","%Name":"","constants":[],"copyToTargets":44,"filename":"GoogleSignIn.ext","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"GoogleSignIn_Show","argCount":0,"args":[],"documentation":"","externalName":"GoogleSignIn_Show","help":"GoogleSignIn_Show()","hidden":false,"kind":4,"name":"GoogleSignIn_Show","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},

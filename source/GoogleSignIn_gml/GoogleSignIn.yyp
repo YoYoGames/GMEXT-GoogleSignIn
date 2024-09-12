@@ -21,8 +21,7 @@
     {"$GMFolder":"","%Name":"GoogleSignIn","folderPath":"folders/GoogleSignIn.yy","name":"GoogleSignIn","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"Google Sign In Extension.docx","CopyToMask":0,"filePath":"datafiles","name":"Google Sign In Extension.docx","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Google Sign In Extension.pdf","CopyToMask":0,"filePath":"datafiles","name":"Google Sign In Extension.pdf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"GMEXT-GoogleSignIn.html","CopyToMask":0,"filePath":"datafiles","name":"GMEXT-GoogleSignIn.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
