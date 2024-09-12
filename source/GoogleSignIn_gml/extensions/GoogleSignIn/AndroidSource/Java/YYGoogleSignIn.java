@@ -42,17 +42,21 @@ public class YYGoogleSignIn extends RunnerSocial
 	public void GoogleSignIn_Show()
 	{
 		oneTapClient = Identity.getSignInClient(activity);
-		
+				
+		// Retrieve the client ID and append ".apps.googleusercontent.com" to it
+		String fullClientID = RunnerJNILib.extOptGetString("GoogleSignIn", "androidClientID") + ".apps.googleusercontent.com";
+
+		// Build the sign-in request with the modified client ID
 		BeginSignInRequest signInRequest = BeginSignInRequest.builder()
-					//.setPasswordRequestOptions(PasswordRequestOptions.builder().setSupported(true).build())
-					.setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
-						.setSupported(true)
-						.setServerClientId(RunnerJNILib.extOptGetString("GoogleSignIn", "androidClientID"))
-						.setFilterByAuthorizedAccounts(true)
-						.build()
-					)
-			  .setAutoSelectEnabled(true)
-			  .build();
+			//.setPasswordRequestOptions(PasswordRequestOptions.builder().setSupported(true).build())
+			.setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
+				.setSupported(true)
+				.setServerClientId(fullClientID)  // Use the appended client ID
+				.setFilterByAuthorizedAccounts(true)
+				.build()
+			)
+			.setAutoSelectEnabled(true)
+			.build();
 			  
 		oneTapClient.beginSignIn(signInRequest).addOnSuccessListener(activity, new OnSuccessListener<BeginSignInResult>() 
 		{
