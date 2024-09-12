@@ -92,7 +92,6 @@ public class YYGoogleSignIn extends RunnerSocial
 		});
 	}
 
-	
 	public void onActivityResult(int requestCode, int resultCode, Intent data) 
 	{
 		switch(requestCode)
@@ -154,22 +153,8 @@ public class YYGoogleSignIn extends RunnerSocial
 		}
 	}
 	
-	// public void GoogleSignIn_SignOut()//This isn't a possible?
-	// {
-		// Auth.GoogleSignInApi.signOut().setResultCallback(new ResultCallback<Status>() 
-		// {
-			// @Override
-			// public void onResult(@NonNull Status status) 
-			// {
-				// int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
-				// RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
-				// if(status.isSuccess())
-					// RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 1.0);
-				// else
-					// RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 0.0);
-				// RunnerJNILib.CreateAsynEventWithDSMap( dsMapIndex, EVENT_OTHER_SOCIAL);
-			// }
-		// });
-	// }
+	public void GoogleSignIn_SignOut()
+	{
+		oneTapClient.signOut();
+	}
 }
-
