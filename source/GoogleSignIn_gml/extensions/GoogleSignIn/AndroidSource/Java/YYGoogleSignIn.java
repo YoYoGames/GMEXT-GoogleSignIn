@@ -41,6 +41,7 @@ public class YYGoogleSignIn extends RunnerSocial
 	
 	public void GoogleSignIn_Show()
 	{
+		Log.i("yoyo","GoogleSignIn_Show: " + String.valueOf(RunnerJNILib.extOptGetReal("GoogleSignIn", "FilterByAuthorizedAccounts") > 0.5));
 		oneTapClient = Identity.getSignInClient(activity);
 				
 		// Retrieve the client ID and append ".apps.googleusercontent.com" to it
@@ -52,7 +53,7 @@ public class YYGoogleSignIn extends RunnerSocial
 			.setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
 				.setSupported(true)
 				.setServerClientId(fullClientID)  // Use the appended client ID
-				.setFilterByAuthorizedAccounts(true)
+				.setFilterByAuthorizedAccounts(RunnerJNILib.extOptGetReal("GoogleSignIn", "FilterByAuthorizedAccounts") > 0.5)
 				.build()
 			)
 			.setAutoSelectEnabled(true)
