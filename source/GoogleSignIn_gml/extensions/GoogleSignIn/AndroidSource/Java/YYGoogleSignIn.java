@@ -52,7 +52,7 @@ public class YYGoogleSignIn extends RunnerSocial
 			.setGoogleIdTokenRequestOptions(GoogleIdTokenRequestOptions.builder()
 				.setSupported(true)
 				.setServerClientId(fullClientID)  // Use the appended client ID
-				.setFilterByAuthorizedAccounts(true)
+				.setFilterByAuthorizedAccounts(false)
 				.build()
 			)
 			.setAutoSelectEnabled(true)
