@@ -24,3 +24,7 @@ the user is signing In to. To get this identifier the user can follow the follow
 
 > [!IMPORTANT]
 > When entering the Client ID into the extension options make sure you remove the extra `".apps.googleusecontent.com"` and only provide the UUID.
+
+## Play App Signing
+
+When testing your game on an attached Android device with [Play App Signing](https://support.google.com/googleplay/android-developer/answer/9842756) enabled, you may run into the error `10: Developer console is not set up correctly`. This can be solved by deploying the export to a release track and downloading the app from Google Play. This downloaded app will be signed with the correct keystore signature.
