@@ -1,5 +1,4 @@
 
-if(GOOGLE_WEBSOCKET_LOCAL)
 if(os_browser != browser_not_a_browser)
 if(async_load[?"type"] == "GoogleSignIn_Show")
 if(async_load[?"success"])
