@@ -37,6 +37,7 @@
     {"id":{"name":"obj_gm_button","path":"objects/obj_gm_button/obj_gm_button.yy",},},
     {"id":{"name":"obj_gm_text","path":"objects/obj_gm_text/obj_gm_text.yy",},},
     {"id":{"name":"obj_gm_textbox","path":"objects/obj_gm_textbox/obj_gm_textbox.yy",},},
+    {"id":{"name":"Obj_GoogleSignIn_Local_Web_Connection","path":"objects/Obj_GoogleSignIn_Local_Web_Connection/Obj_GoogleSignIn_Local_Web_Connection.yy",},},
     {"id":{"name":"Obj_GoogleSignIn_SignIn","path":"objects/Obj_GoogleSignIn_SignIn/Obj_GoogleSignIn_SignIn.yy",},},
     {"id":{"name":"Obj_GoogleSignIn_SignOut","path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},},
     {"id":{"name":"rm_gm_base","path":"rooms/rm_gm_base/rm_gm_base.yy",},},
