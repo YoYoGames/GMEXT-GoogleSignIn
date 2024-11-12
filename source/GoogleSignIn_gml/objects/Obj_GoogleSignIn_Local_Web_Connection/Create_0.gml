@@ -33,7 +33,7 @@ function start_proccess()
 		server_auth_socket = network_create_server_raw(network_socket_type, port, 32);
 	}
 	
-	var login_url = "" //+ "?"+GOOGLESIGNIN_WEBSOCKET_TRIGGER_PARAMATER 
+	var login_url = "" //+ "?" + GOOGLESIGNIN_WEBSOCKET_TRIGGER_PARAMATER 
 	url_open(login_url)
 }
 
@@ -83,12 +83,13 @@ failed_game = function()
 }
 
 
-
+//Ok, never try launch it automatically
 //for(var i = 0 ; i < parameter_count() ; i++)
 //if(parameter_string(i+1) == GOOGLESIGNIN_WEBSOCKET_TRIGGER_PARAMATER)
 //{
 //	GoogleSignIn_Show()
 //	break
 //}
-if(os_browser != browser_not_a_browser)
-	GoogleSignIn_Show()
+////or.....
+////if(os_browser != browser_not_a_browser)
+////	GoogleSignIn_Show()
