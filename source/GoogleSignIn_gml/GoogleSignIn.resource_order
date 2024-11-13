@@ -15,6 +15,7 @@
     {"name":"obj_gm_textbox","order":2,"path":"objects/obj_gm_textbox/obj_gm_textbox.yy",},
     {"name":"Obj_GoogleSignIn_Local_Web_Connection","order":2,"path":"objects/Obj_GoogleSignIn_Local_Web_Connection/Obj_GoogleSignIn_Local_Web_Connection.yy",},
     {"name":"Obj_GoogleSignIn_SignOut","order":1,"path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},
+    {"name":"google_signin_function","order":1,"path":"scripts/google_signin_function/google_signin_function.yy",},
     {"name":"spr_gm_button","order":1,"path":"sprites/spr_gm_button/spr_gm_button.yy",},
     {"name":"spr_gm_textbox","order":2,"path":"sprites/spr_gm_textbox/spr_gm_textbox.yy",},
   ],

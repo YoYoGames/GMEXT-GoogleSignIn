@@ -26,7 +26,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.1100.0.683",
   },
   "name":"GoogleSignIn",
   "resources":[
@@ -42,6 +42,7 @@
     {"id":{"name":"Obj_GoogleSignIn_SignOut","path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},},
     {"id":{"name":"rm_gm_base","path":"rooms/rm_gm_base/rm_gm_base.yy",},},
     {"id":{"name":"Room_GoogleSignIn","path":"rooms/Room_GoogleSignIn/Room_GoogleSignIn.yy",},},
+    {"id":{"name":"google_signin_function","path":"scripts/google_signin_function/google_signin_function.yy",},},
     {"id":{"name":"spr_gm_background","path":"sprites/spr_gm_background/spr_gm_background.yy",},},
     {"id":{"name":"spr_gm_button","path":"sprites/spr_gm_button/spr_gm_button.yy",},},
     {"id":{"name":"spr_gm_textbox","path":"sprites/spr_gm_textbox/spr_gm_textbox.yy",},},
