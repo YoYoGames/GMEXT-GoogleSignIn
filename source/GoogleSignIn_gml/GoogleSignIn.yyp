@@ -19,6 +19,7 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/GoogleSignIn Demo/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/GoogleSignIn Demo/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GoogleSignIn","folderPath":"folders/GoogleSignIn.yy","name":"GoogleSignIn","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Core System (Don't Edit)","folderPath":"folders/GoogleSignIn/Core System (Don't Edit).yy","name":"Core System (Don't Edit)","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"GMEXT-GoogleSignIn.html","CopyToMask":0,"filePath":"datafiles","name":"GMEXT-GoogleSignIn.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -26,7 +27,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.1100.0.683",
   },
   "name":"GoogleSignIn",
   "resources":[
@@ -37,7 +38,8 @@
     {"id":{"name":"obj_gm_button","path":"objects/obj_gm_button/obj_gm_button.yy",},},
     {"id":{"name":"obj_gm_text","path":"objects/obj_gm_text/obj_gm_text.yy",},},
     {"id":{"name":"obj_gm_textbox","path":"objects/obj_gm_textbox/obj_gm_textbox.yy",},},
-    {"id":{"name":"Obj_GoogleSignIn_Local_Web_Connection","path":"objects/Obj_GoogleSignIn_Local_Web_Connection/Obj_GoogleSignIn_Local_Web_Connection.yy",},},
+    {"id":{"name":"Obj_GoogleSignIn_Oauth_Http","path":"objects/Obj_GoogleSignIn_Oauth_Http/Obj_GoogleSignIn_Oauth_Http.yy",},},
+    {"id":{"name":"Obj_GoogleSignIn_Redirection_Listener","path":"objects/Obj_GoogleSignIn_Redirection_Listener/Obj_GoogleSignIn_Redirection_Listener.yy",},},
     {"id":{"name":"Obj_GoogleSignIn_SignIn","path":"objects/Obj_GoogleSignIn_SignIn/Obj_GoogleSignIn_SignIn.yy",},},
     {"id":{"name":"Obj_GoogleSignIn_SignOut","path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},},
     {"id":{"name":"rm_gm_base","path":"rooms/rm_gm_base/rm_gm_base.yy",},},

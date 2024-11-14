@@ -58,8 +58,8 @@
   "optionsFile":"options.json",
   "packageId":"",
   "parent":{
-    "name":"GoogleSignIn",
-    "path":"folders/GoogleSignIn.yy",
+    "name":"Core System (Don't Edit)",
+    "path":"folders/GoogleSignIn/Core System (Don't Edit).yy",
   },
   "productId":"",
   "resourceType":"GMExtension",

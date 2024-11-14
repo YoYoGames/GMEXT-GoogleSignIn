@@ -1,3 +1,8 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+#macro GOOGLE_OAUTH_ENDPOINT "https://accounts.google.com/o/oauth2/v2/auth"
+#macro GOOGLE_TOKEN_ENDPOINT "https://oauth2.googleapis.com/token"
 
 function create_code(digits = 4,characters = "0123456789")
 {
@@ -30,13 +35,8 @@ auth_url = authorization_endpoint + "?response_type=code" +
            "&redirect_uri=" + __google_signin_url_encode(redirect_uri) +
            "&client_id=" + __google_signin_url_encode(client_id) +
            "&code_challenge=" + code_challenge +
-           "&code_challenge_method=S256" +"&state=" + state;
-
-code_exchange_request = noone;
-search_request = noone;
+           "&code_challenge_method=S256" + "&state=" + state;
 
 show_debug_message("auth_url: " + auth_url)
 
 url_open(auth_url);
-
-alarm[0] = room_speed

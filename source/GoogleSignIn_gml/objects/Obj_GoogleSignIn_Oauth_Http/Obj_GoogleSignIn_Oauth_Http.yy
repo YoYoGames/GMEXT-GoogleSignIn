@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_GoogleSignIn_Local_Web_Connection",
+  "%Name":"Obj_GoogleSignIn_Oauth_Http",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":62,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_GoogleSignIn_Local_Web_Connection",
+  "name":"Obj_GoogleSignIn_Oauth_Http",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/GoogleSignIn Demo/Objects.yy",
+    "name":"Core System (Don't Edit)",
+    "path":"folders/GoogleSignIn/Core System (Don't Edit).yy",
   },
   "parentObjectId":null,
   "persistent":false,

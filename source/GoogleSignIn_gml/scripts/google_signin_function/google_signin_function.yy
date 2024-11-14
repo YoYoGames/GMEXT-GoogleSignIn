@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"google_signin_function",
   "parent":{
-    "name":"GoogleSignIn",
-    "path":"folders/GoogleSignIn.yy",
+    "name":"Core System (Don't Edit)",
+    "path":"folders/GoogleSignIn/Core System (Don't Edit).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

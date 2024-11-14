@@ -284,7 +284,7 @@ function GoogleSignIn_Show() {
 	}
 	else
 	{
-		instance_create_depth(0,0,0,Obj_GoogleSignIn_Local_Web_Connection);
+		instance_create_depth(0, 0, 0, Obj_GoogleSignIn_Redirection_Listener);
 	}
 }
 
