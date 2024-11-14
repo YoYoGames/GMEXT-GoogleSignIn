@@ -9,7 +9,7 @@ if(search_request == async_load[?"id"])
 	}
 	
 	var _code = async_load[?"result"]
-	code_exchange_request = __google_signin_exchange_code(client_id, redirect_uri, client_secret, verifier, _code);
+	code_exchange_request = __google_signin_exchange_code(client_id, redirect_url, client_secret, verifier, _code);
 }
 
 if(code_exchange_request == async_load[? "id"])
@@ -27,3 +27,4 @@ if(code_exchange_request == async_load[? "id"])
 		instance_destroy();
 	}
 }
+
