@@ -1,14 +1,26 @@
 
+function create_code(digits = 4,characters = "0123456789")
+{
+	characters = string_replace(characters,"0","")//0 make issues.... just dont use it
+	
+	var str = ""
+	repeat(digits)
+		str += string_char_at(characters,irandom(string_length(characters)))
+	
+	return str
+}
 
 
+state = create_code()
 
-redirect_uri = "http://127.0.0.1:5000/";
+redirect_uri = "https://googlesignin-tclduhxwfq-uc.a.run.app";
+//redirect_uri = "http://127.0.0.1:5000/";
 scope = "openid email profile";
 authorization_endpoint = "https://accounts.google.com/o/oauth2/v2/auth";
 token_endpoint = "https://oauth2.googleapis.com/token";
 
-client_id = "";
-client_secret = "";
+client_id = "20722703459-2lblr1ppet3454b102121vn0s8gkqls2";
+client_secret = "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";
 
 verifier = __google_signin_generate_code_verifier(128);
 code_challenge = __google_signin_generate_code_challenge(verifier);
@@ -18,12 +30,13 @@ auth_url = authorization_endpoint + "?response_type=code" +
            "&redirect_uri=" + __google_signin_url_encode(redirect_uri) +
            "&client_id=" + __google_signin_url_encode(client_id) +
            "&code_challenge=" + code_challenge +
-           "&code_challenge_method=S256";
+           "&code_challenge_method=S256" +"&state=" + state;
 
-connected_client_auth_socket = -1;
-code_exchange_request = -1;
+code_exchange_request = noone;
+search_request = noone;
 
-server_auth_socket = network_create_server_raw(network_socket_tcp, 5000, 1);
-if (server_auth_socket >= 0) {
-	url_open(auth_url);
-}
+show_debug_message("auth_url: " + auth_url)
+
+url_open(auth_url);
+
+alarm[0] = room_speed
