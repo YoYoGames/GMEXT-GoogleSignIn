@@ -156,6 +156,35 @@ public class YYGoogleSignIn extends RunnerSocial
 	
 	public void GoogleSignIn_SignOut()
 	{
-		oneTapClient.signOut();
+		if (oneTapClient == null)
+		{
+			oneTapClient = Identity.getSignInClient(activity);
+		}
+	
+		oneTapClient.signOut()
+		.addOnSuccessListener(new OnSuccessListener<Void>() 
+		{
+				@Override
+				public void onSuccess(Void result) {
+					Log.d("yoyo", "GoogleSignIn_SignOut: Sign out successful.");
+					int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
+					RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
+					RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 1.0);
+					RunnerJNILib.CreateAsynEventWithDSMap(dsMapIndex, EVENT_OTHER_SOCIAL);
+				}
+		})
+		.addOnFailureListener(new OnFailureListener() 
+		{
+			@Override
+			public void onFailure(@NonNull Exception e) 
+			{
+				Log.e("yoyo", "GoogleSignIn_SignOut Error: " + e.getLocalizedMessage());
+				int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
+				RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
+				RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 0.0);
+				RunnerJNILib.DsMapAddString(dsMapIndex, "error", e.getLocalizedMessage());
+				RunnerJNILib.CreateAsynEventWithDSMap(dsMapIndex, EVENT_OTHER_SOCIAL);
+			}
+		});
 	}
 }
