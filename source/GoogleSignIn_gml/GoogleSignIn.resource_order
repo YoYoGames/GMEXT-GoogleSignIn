@@ -16,7 +16,7 @@
     {"name":"obj_gm_text","order":1,"path":"objects/obj_gm_text/obj_gm_text.yy",},
     {"name":"obj_gm_textbox","order":2,"path":"objects/obj_gm_textbox/obj_gm_textbox.yy",},
     {"name":"Obj_GoogleSignIn_Oauth_Http","order":2,"path":"objects/Obj_GoogleSignIn_Oauth_Http/Obj_GoogleSignIn_Oauth_Http.yy",},
-    {"name":"Obj_GoogleSignIn_Redirection_Listener","order":2,"path":"objects/Obj_GoogleSignIn_Redirection_Listener/Obj_GoogleSignIn_Redirection_Listener.yy",},
+    {"name":"Obj_GoogleSignIn_OAuth","order":2,"path":"objects/Obj_GoogleSignIn_OAuth/Obj_GoogleSignIn_OAuth.yy",},
     {"name":"Obj_GoogleSignIn_SignOut","order":1,"path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},
     {"name":"spr_gm_button","order":1,"path":"sprites/spr_gm_button/spr_gm_button.yy",},
     {"name":"spr_gm_textbox","order":2,"path":"sprites/spr_gm_textbox/spr_gm_textbox.yy",},
