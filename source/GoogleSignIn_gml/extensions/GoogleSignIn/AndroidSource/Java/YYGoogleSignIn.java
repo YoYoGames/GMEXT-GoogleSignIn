@@ -37,7 +37,7 @@ public class YYGoogleSignIn extends RunnerSocial
 	
 	private static final int REQ_ONE_TAP = 635;
 	
-	private SignInClient oneTapClient;
+	private SignInClient oneTapClient = null;
 	
 	public void GoogleSignIn_Show()
 	{
@@ -156,6 +156,42 @@ public class YYGoogleSignIn extends RunnerSocial
 	
 	public void GoogleSignIn_SignOut()
 	{
-		oneTapClient.signOut();
+		if (oneTapClient == null)
+		{
+			Log.d("yoyo", "GoogleSignIn_SignOut: Sign out successful.");
+			int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
+			RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
+			RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 1.0);
+			RunnerJNILib.CreateAsynEventWithDSMap(dsMapIndex, EVENT_OTHER_SOCIAL);
+			return;
+		}
+	
+		oneTapClient.signOut()
+		.addOnSuccessListener(new OnSuccessListener<Void>() 
+		{
+				@Override
+				public void onSuccess(Void result) {
+					Log.d("yoyo", "GoogleSignIn_SignOut: Sign out successful.");
+					int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
+					RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
+					RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 1.0);
+					RunnerJNILib.CreateAsynEventWithDSMap(dsMapIndex, EVENT_OTHER_SOCIAL);
+					
+					oneTapClient = null;
+				}
+		})
+		.addOnFailureListener(new OnFailureListener() 
+		{
+			@Override
+			public void onFailure(@NonNull Exception e) 
+			{
+				Log.e("yoyo", "GoogleSignIn_SignOut Error: " + e.getLocalizedMessage());
+				int dsMapIndex = RunnerJNILib.jCreateDsMap(null, null, null);
+				RunnerJNILib.DsMapAddString(dsMapIndex, "type", "GoogleSignIn_SignOut");
+				RunnerJNILib.DsMapAddDouble(dsMapIndex, "success", 0.0);
+				RunnerJNILib.DsMapAddString(dsMapIndex, "error", e.getLocalizedMessage());
+				RunnerJNILib.CreateAsynEventWithDSMap(dsMapIndex, EVENT_OTHER_SOCIAL);
+			}
+		});
 	}
 }
