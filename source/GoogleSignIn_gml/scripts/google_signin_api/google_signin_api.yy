@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"google_signin_api",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"google_signin_api",
+  "parent":{
+    "name":"Extensions",
+    "path":"folders/GoogleSignIn/Extensions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

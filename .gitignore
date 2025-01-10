@@ -2,3 +2,5 @@
 source/GoogleSignIn_gml/options/
 
 output/
+
+source/GoogleSignIn_gml/datafiles/.env

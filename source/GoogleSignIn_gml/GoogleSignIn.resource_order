@@ -7,7 +7,7 @@
     {"name":"Sprites","order":4,"path":"folders/GM Extensions Asset/Sprites.yy",},
     {"name":"GoogleSignIn Demo","order":2,"path":"folders/GoogleSignIn Demo.yy",},
     {"name":"Rooms","order":1,"path":"folders/GoogleSignIn Demo/Rooms.yy",},
-    {"name":"Core System (Don't Edit)","order":4,"path":"folders/GoogleSignIn/Core System (Don't Edit).yy",},
+    {"name":"Extensions","order":2,"path":"folders/GoogleSignIn/Extensions.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"GoogleSignIn","order":1,"path":"extensions/GoogleSignIn/GoogleSignIn.yy",},
@@ -15,7 +15,6 @@
     {"name":"fnt_gm_30","order":2,"path":"fonts/fnt_gm_30/fnt_gm_30.yy",},
     {"name":"obj_gm_text","order":1,"path":"objects/obj_gm_text/obj_gm_text.yy",},
     {"name":"obj_gm_textbox","order":2,"path":"objects/obj_gm_textbox/obj_gm_textbox.yy",},
-    {"name":"Obj_GoogleSignIn_Oauth_Http","order":2,"path":"objects/Obj_GoogleSignIn_Oauth_Http/Obj_GoogleSignIn_Oauth_Http.yy",},
     {"name":"Obj_GoogleSignIn_OAuth","order":2,"path":"objects/Obj_GoogleSignIn_OAuth/Obj_GoogleSignIn_OAuth.yy",},
     {"name":"Obj_GoogleSignIn_SignOut","order":1,"path":"objects/Obj_GoogleSignIn_SignOut/Obj_GoogleSignIn_SignOut.yy",},
     {"name":"spr_gm_button","order":1,"path":"sprites/spr_gm_button/spr_gm_button.yy",},
