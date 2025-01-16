@@ -36,7 +36,7 @@
  * 
  * @event social
  * @desc 
- * @member {string} type The string `"google_signin_login_oauth"`
+ * @member {string} type The string `"GoogleSignIn_LoginOAuth"`
  * @member {string} redirect_uri The redirect URL as set in the Extension Options
  * @member {string} client_id The Client ID as set in the Extension Options
  * @member {string} state The state value passed in the original function call
@@ -92,7 +92,7 @@
  * * Show sign-in account selector
  * * Sign out of your account
  * 
- * Google Sign-In functionality is supported on all platforms. On iOS, Android and HTML5 it makes use of the SDK, on all other platforms you can sign in using OAuth.
+ * [[Note: The Sign In functionality is available on Android, iOS/tvOS and HTML5 using the SDK as well as on all other platforms using OAuth.]]
  * 
  * @section Guides
  * @desc This section contains guides to get started with the Google Sign-In extension.
