@@ -19,6 +19,7 @@ The Google Sign In extension requires you to provide the web client ID for the p
 In the extension options you should first enter the client IDs for the different platforms on which your game will use the Google Sign In functionality.
 
 > [!IMPORTANT]
+> 
 > When entering the client ID into the extension options make sure you remove the extra `".apps.googleusecontent.com"` and only provide the UUID.
 
 On Android, the option **FilterByAuthorizedAccounts** will check if the user has any accounts that have previously been used to sign in to your app. Users can choose between available accounts to sign in. See: https://developer.android.com/identity/sign-in/credential-manager-siwg#instantiate-google
