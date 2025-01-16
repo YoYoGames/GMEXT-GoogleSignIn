@@ -1,29 +1,30 @@
-
 @title Setup
 
-The Google Sign In extension requires the developer to provide the web client Id for the project
-the user is signing In to. To get this identifier the user can follow the following steps:
+## Google Developer Console
 
-1. Go to Google Cloud Platform [Credentials and APIs](https://console.cloud.google.com/apis/credentials) page and select your project.
+### Creating Credentials
 
-2. On the top of the screen click to Create Credentials
+The Google Sign In extension requires you to provide the web client ID for the project the user is signing in to. To get this identifier you can follow the steps described in the Google Developer documentation here:
 
-![](assets/gsi_create_credentials.png)
+> [Create authorization credentials](https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred)
 
-3. Select the OAuth client ID option from the dropdown.
+[[Note: Creating the authorisation credentials is slightly different on the various platforms this extension is supported on. See the respective page under the **Access to Google APIs** section.]]
 
-![](assets/gsi_oauth_client_id.png)
+# GameMaker
 
-4. For application type select Web Application and then give your OAuth client ID a name.
+## Extension Options
 
-![](assets/gsi_type_and_name.png)
+![Extension_Options](assets/extension_options.png)
 
-5. Done, you should now be ready to use the Google SignIn Extension by providing the ID that can be found in the image below (click in the icon to copy the Web Client ID).
-
-![](assets/gsi_overview.png)
+In the extension options you should first enter the client IDs for the different platforms on which your game will use the Google Sign In functionality.
 
 > [!IMPORTANT]
-> When entering the Client ID into the extension options make sure you remove the extra `".apps.googleusecontent.com"` and only provide the UUID.
+> 
+> When entering the client ID into the extension options make sure you remove the extra `".apps.googleusecontent.com"` and only provide the UUID.
+
+On Android, the option **FilterByAuthorizedAccounts** will check if the user has any accounts that have previously been used to sign in to your app. Users can choose between available accounts to sign in. See: https://developer.android.com/identity/sign-in/credential-manager-siwg#instantiate-google
+
+If your game makes uses of the OAuth login functionality, you also need to enter the **OAuth Client ID** and the **OAuth Redirect URL**.
 
 ## Play App Signing
 
