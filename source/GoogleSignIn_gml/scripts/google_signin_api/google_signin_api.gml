@@ -149,7 +149,7 @@ function GoogleSignIn_LoginOAuth(_state, _scopes = "openid email profile") {
 	
 	// Trigger async event which marks the moment of oauth init
 	var _async_load = ds_map_create();
-	_async_load[? "type"] = "google_signin_login_oauth";
+	_async_load[? "type"] = "GoogleSignIn_LoginOAuth";
 	_async_load[? "redirect_uri"] = _redirect_url;
 	_async_load[? "client_id"] = _client_id;
 	_async_load[? "state"] = _state;
