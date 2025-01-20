@@ -59,7 +59,7 @@
  * }
  * ```
  * 
- * If the user confirms, an authorisation code is sent to the URL that you've set under **OAuth Redirect URL** in the [Extension Options](manual.gamemaker.io/monthly/en/The_Asset_Editors/Extensions.htm#extension_options).
+ * If the user confirms, an authorisation code is sent to the URL that you've set under **OAuth Redirect URL** in the [Extension Options](https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Extensions.htm#extension_options).
  * The Redirect URL is a URL on your own server to which the authorisation code is sent. Your server code needs to handle receiving the code and then send a POST request to the following endpoint to exchange the code for the access token: `https://oauth2.googleapis.com/token`. See the demo project for more information on what to include in the request to this endpoint.
  * 
  * If all went well, at one point your server will have received the access token. It is then up to your game to periodically (e.g., using an ${event.alarm}) send a POST request to the same server (to the search URL) to check if it has the token. The code to do this might look as follows:

@@ -83,6 +83,10 @@
 <li>Show sign-in account selector</li>
 <li>Sign out of your account</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Sign In functionality is available on Android, iOS/tvOS and HTML5 using the SDK as well as on all other platforms using OAuth.</p>
+</div>
 <h2 id="guides">Guides</h2>
 <p>This section contains guides to get started with the Google Sign-In extension.</p>
 <ul>
@@ -93,13 +97,14 @@
 <ul>
 <li><a href="home.html#googlesignin_show">GoogleSignIn_Show</a></li>
 <li><a href="home.html#googlesignin_signout">GoogleSignIn_SignOut</a></li>
+<li><a href="home.html#googlesignin_loginoauth">GoogleSignIn_LoginOAuth</a></li>
 </ul>
 <p><br></p>
 <hr />
 <p align="right"><a href="#top">Back To Top</a></p>
 
 <h1 id="googlesignin_show">GoogleSignIn_Show</h1>
-<p>Shows the google overlay popup to select a google account to sign up with.</p>
+<p>This function shows the Google overlay popup to select a Google account to sign up with.</p>
 <p>This function operates asynchronously, which means that it does not immediately return the requested result. Instead, upon completion of the task, it will trigger the <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Async Event</a>.</p>
 <p><br></p>
 <p><strong>Syntax:</strong></p>
@@ -150,10 +155,10 @@
 <p align="right"><a href="#top">Back To Top</a></p>
 
 <h1 id="googlesignin_signout">GoogleSignIn_SignOut</h1>
-<p>Signs out the current signed-in user if any.</p>
+<p>This function signs out the currently signed in user, if any.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This function is not compatible with HTML5 and will result in a no-op call</p>
+<p>This function is not compatible with HTML5 and will result in a no-op call.</p>
 </div>
 <p>This function operates asynchronously, which means that it does not immediately return the requested result. Instead, upon completion of the task, it will trigger the <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Async Event</a>.</p>
 <p><br></p>
@@ -196,6 +201,109 @@
 </table>
 <p><br></p>
 <p><br></p>
+<hr />
+<p align="right"><a href="#top">Back To Top</a></p>
+
+<h1 id="googlesignin_loginoauth">GoogleSignIn_LoginOAuth</h1>
+<p>This function starts the OAuth process for logging in with a Google account.</p>
+<p>This function operates asynchronously, which means that it does not immediately return the requested result. Instead, upon completion of the task, it will trigger the <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Async Event</a>.</p>
+<p><br></p>
+<p><strong>Syntax:</strong></p>
+<blockquote>
+<pre class="highlight"><code class="language-gml">GoogleSignIn_LoginOAuth(state, scopes=undefined)</code></pre>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>state</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>A unique state string used for security and validation during the OAuth process.</td>
+</tr>
+<tr>
+<td>scopes</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>The scopes that will be requested when performing the OAuth authorization. Defaults to <code>"openid email profile"</code>.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><strong>Returns:</strong></p>
+<blockquote>
+<p>N/A</p>
+</blockquote>
+<p><br></p>
+<p><strong>Triggers:</strong></p>
+<blockquote>
+<p><a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Async Event</a></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>The string <code>"GoogleSignIn_LoginOAuth"</code></td>
+</tr>
+<tr>
+<td>redirect_uri</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>The redirect URL as set in the Extension Options</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>The Client ID as set in the Extension Options</td>
+</tr>
+<tr>
+<td>state</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>The state value passed in the original function call</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Example:</strong></p>
+<p><pre class="highlight"><code class="language-gml">GoogleSignIn_LoginOAuth(state);</code></pre>
+The above code starts the OAuth login process for logging in with a Google account. Since the optional <code>scopes</code> parameter isn't provided, the default scopes are requested.
+The function call will bring up a browser window in which the user can grant your game access to the requested scopes on the user's behalf.</p>
+<p>The function finally triggers a <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Async Event</a>:
+<pre class="highlight"><code class="language-gml">/// Async - Social Event
+if (async_load[? "type"] == "google_signin_login_oauth") {
+    // At this point the OAuth happened within the server
+    // we need to query the token from the server now.
+    alarm[0] = game_get_speed(gamespeed_fps);
+}</code></pre></p>
+<p>If the user confirms, an authorisation code is sent to the URL that you've set under <strong>OAuth Redirect URL</strong> in the <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Extensions.htm#extension_options">Extension Options</a>.
+The Redirect URL is a URL on your own server to which the authorisation code is sent. Your server code needs to handle receiving the code and then send a POST request to the following endpoint to exchange the code for the access token: <code>https://oauth2.googleapis.com/token</code>. See the demo project for more information on what to include in the request to this endpoint.</p>
+<p>If all went well, at one point your server will have received the access token. It is then up to your game to periodically (e.g., using an <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Object_Events.htm">Alarm Event</a>) send a POST request to the same server (to the search URL) to check if it has the token. The code to do this might look as follows:</p>
+<pre class="highlight"><code class="language-gml">/// Alarm 0 Event
+var _headers = ds_map_create();
+ds_map_add(_headers, "Content-Type", "application/json");
+
+var _body = json_stringify({ state: state });
+
+search_request = http_request(search_url, "POST", _headers, _body);
+ds_map_destroy(_headers);</code></pre>
+<p>The HTTP request will either return a valid token or no token (e.g., when the server hasn't received the token yet) in the <a href="https://manual.gamemaker.io/monthly/en/The_Asset_Editors/Object_Properties/Async_Events/HTTP.htm">Http Async Event</a>.
+If no valid token was received, a new HTTP request can be made after a certain amount of time (e.g., after 1 second).
+To limit the number of HTTP requests sent to your server this can be limited to a maximum number of tries.</p>
+<p><br></p>
+<p><br></p>
               
             </div>
           </div><footer>
@@ -207,7 +315,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p><p align="center">GameMaker 2024</p></p>
+      <p><p align="center">GameMaker 2025</p></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

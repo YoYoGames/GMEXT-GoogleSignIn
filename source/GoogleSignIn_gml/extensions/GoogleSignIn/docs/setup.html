@@ -44,6 +44,10 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Setup</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creating-credentials">Creating Credentials</a>
+    </li>
+    </ul>
                 </li>
               </ul>
       </div>
@@ -70,32 +74,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>The Google Sign In extension requires the developer to provide the web client Id for the project
-the user is signing In to. To get this identifier the user can follow the following steps:</p>
-<ol>
-<li>
-<p>Go to Google Cloud Platform <a href="https://console.cloud.google.com/apis/credentials">Credentials and APIs</a> page and select your project.</p>
-</li>
-<li>
-<p>On the top of the screen click to Create Credentials</p>
-</li>
-</ol>
-<p><img alt="" src="assets/gsi_create_credentials.png" /></p>
-<ol>
-<li>Select the OAuth client ID option from the dropdown.</li>
-</ol>
-<p><img alt="" src="assets/gsi_oauth_client_id.png" /></p>
-<ol>
-<li>For application type select Web Application and then give your OAuth client ID a name.</li>
-</ol>
-<p><img alt="" src="assets/gsi_type_and_name.png" /></p>
-<ol>
-<li>Done, you should now be ready to use the Google SignIn Extension by providing the ID that can be found in the image below (click in the icon to copy the Web Client ID).</li>
-</ol>
-<p><img alt="" src="assets/gsi_overview.png" /></p>
+                <h2 id="google-developer-console">Google Developer Console</h2>
+<h3 id="creating-credentials">Creating Credentials</h3>
+<p>The Google Sign In extension requires you to provide the web client ID for the project the user is signing in to. To get this identifier you can follow the steps described in the Google Developer documentation here:</p>
 <blockquote>
-<p>When entering the Client ID into the extension options make sure you remove the extra <code>".apps.googleusecontent.com"</code> and only provide the UUID.</p>
+<p><a href="https://developers.google.com/identity/protocols/oauth2/web-server#creatingcred">Create authorization credentials</a></p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Creating the authorisation credentials is slightly different on the various platforms this extension is supported on. See the respective page under the <strong>Access to Google APIs</strong> section.</p>
+</div>
+<h1 id="gamemaker">GameMaker</h1>
+<h2 id="extension-options">Extension Options</h2>
+<p><img alt="Extension_Options" src="assets/extension_options.png" /></p>
+<p>In the extension options you should first enter the client IDs for the different platforms on which your game will use the Google Sign In functionality.</p>
+<blockquote>
+<p>When entering the client ID into the extension options make sure you remove the extra <code>".apps.googleusecontent.com"</code> and only provide the UUID.</p>
+</blockquote>
+<p>On Android, the option <strong>FilterByAuthorizedAccounts</strong> will check if the user has any accounts that have previously been used to sign in to your app. Users can choose between available accounts to sign in. See: https://developer.android.com/identity/sign-in/credential-manager-siwg#instantiate-google</p>
+<p>If your game makes uses of the OAuth login functionality, you also need to enter the <strong>OAuth Client ID</strong> and the <strong>OAuth Redirect URL</strong>.</p>
+<h2 id="play-app-signing">Play App Signing</h2>
+<p>When testing your game on an attached Android device with <a href="https://support.google.com/googleplay/android-developer/answer/9842756">Play App Signing</a> enabled, you may run into the error <code>10: Developer console is not set up correctly</code>. This can be solved by deploying the export to a release track and downloading the app from Google Play. This downloaded app will be signed with the correct keystore signature.</p>
               
             </div>
           </div><footer>
@@ -107,7 +106,7 @@ the user is signing In to. To get this identifier the user can follow the follow
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p><p align="center">GameMaker 2024</p></p>
+      <p><p align="center">GameMaker 2025</p></p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
