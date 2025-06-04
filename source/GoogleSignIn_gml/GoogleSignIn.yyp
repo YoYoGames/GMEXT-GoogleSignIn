@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"GoogleSignIn",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -21,14 +21,14 @@
     {"$GMFolder":"","%Name":"GoogleSignIn","folderPath":"folders/GoogleSignIn.yy","name":"GoogleSignIn","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/GoogleSignIn/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":".env","CopyToMask":-1,"filePath":"datafiles","name":".env","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"GMEXT-GoogleSignIn.html","CopyToMask":0,"filePath":"datafiles","name":"GMEXT-GoogleSignIn.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.180",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"GoogleSignIn",
   "resources":[
